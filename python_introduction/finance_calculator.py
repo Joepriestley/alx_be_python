@@ -1,9 +1,9 @@
 monthly_income =int(input("Enter your monthly income:"))
 
 
-monthly_espenses = int(input("Enter your total monthly expenses:"))
+monthly_espenses = float(input("Enter your total monthly expenses:"))
 
-monthly_savings = monthly_income- monthly_espenses
+monthly_savings = monthly_income - monthly_espenses
 
 projected_savings = monthly_savings*12 + (monthly_savings*12*0.05)
 
