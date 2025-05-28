@@ -1,4 +1,4 @@
-monthly_income =int(input("Enter your monthly income:"))
+monthly_income =float(input("Enter your monthly income:"))
 
 
 monthly_espenses = float(input("Enter your total monthly expenses:"))
