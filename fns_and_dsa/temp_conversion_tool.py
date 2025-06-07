@@ -12,6 +12,11 @@ def convert_to_fahrenheit(celcius):
     
 
 temperature =float(input("Enter the temperature to convert: "))
+if temperature.is_integer():
+    pass
+else:
+    print("Invalid temperature. Please enter a numeric value.")
+
 
 celcius_temp= convert_to_celcius(temperature)
 farenheit_temp=convert_to_fahrenheit(temperature)
@@ -24,4 +29,4 @@ elif confirm =="C":
     print(f"{temperature}°C is {farenheit_temp}°F")
     # print(f"{temperature}°C is {convert_to_fahrenheit(temperature)}°F")
 else:
-    print("Invalid temperature unit")
+    print("Invalid temperature. Please enter a numeric value.")
