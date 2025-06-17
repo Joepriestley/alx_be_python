@@ -2,9 +2,9 @@ class BankAccount:
     """class representing a bank account
     """
     
-    def __init__(self,account_balance = 0):
+    def __init__(self,account_balance = 0.0):
         
-        self.account_balance = account_balance
+        self.account_balance = float(account_balance)
         
     def deposit(self, amount):
         newAmount = self.account_balance =+ amount 
@@ -12,7 +12,7 @@ class BankAccount:
 
         
     def withdraw(self,amount):
-        if self.account_balance -amount >= 0:
+        if self.account_balance -float(amount) >= 0:
             return True
         
 
