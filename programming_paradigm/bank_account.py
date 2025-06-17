@@ -2,9 +2,9 @@ class BankAccount:
     """class representing a bank account
     """
     
-    def __init__(self,account_balance = 0.0):
+    def __init__(self,account_balance = 0):
         
-        self.account_balance = [account_balance]
+        self.account_balance = account_balance
         
     def deposit(self, amount):
         newAmount = self.account_balance =+ amount 
