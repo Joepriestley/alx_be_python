@@ -11,8 +11,6 @@ class BankAccount:
         return newAmount
 
         
-    
-        
     def withdraw(self,amount):
         if self.account_balance -amount >= 0:
             return True
@@ -21,10 +19,4 @@ class BankAccount:
     def display_balance(self):
         return (f"Current Balance: ${self.account_balance}")
     
-    
-account= BankAccount()
-account.deposit(2000)
-account.deposit(2000)
-print(account.display_balance())
-
     
