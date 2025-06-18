@@ -7,8 +7,10 @@ class BankAccount:
         self.account_balance = account_balance
         
     def deposit(self, amount):
-        newAmount = self.account_balance =+ amount 
-        return newAmount
+        if amount <=0:
+            return f"Amount must be positive"
+        self.account_balance += amount 
+        return self.account_balance
 
         
     def withdraw(self,amount):
