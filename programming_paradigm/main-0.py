@@ -24,6 +24,7 @@ def main():
         print(account.display_balance())
     else:
         print("Invalid command.")
-
+        # Example: set balance to 250 for testing
+        account.balance = 250
 if __name__ == "__main__":
     main()
